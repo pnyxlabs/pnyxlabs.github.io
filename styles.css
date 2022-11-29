@@ -1,0 +1,67 @@
+:root {
+    --main-bg-color: #161819;
+    --main-fg-color: white;
+    --accent-fg-upper-color: #ECA94A;
+    --accent-fg-lower-color: #FFD966;
+    --accent-fg-color: -webkit-linear-gradient(var(--accent-fg-upper-color), var(--accent-fg-lower-color));
+}
+
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+.page {
+    max-width: 1024px;
+    margin: auto;
+    padding-bottom: 144px;
+}
+
+.accent {
+    background: var(--accent-fg-color);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    text-align: center;
+    margin: 144px 0;
+}
+
+.title .secondary {
+    margin-bottom: 48px;
+}
+
+.secondary {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    opacity: 30%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content .column {
+    width: calc(50% - 24px);
+    margin-bottom: 32px;
+}
+
+.signature {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.signature img {
+    margin: 0 20px;
+}
