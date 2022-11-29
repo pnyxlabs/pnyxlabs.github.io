@@ -18,7 +18,7 @@ body {
 .page {
     max-width: 1024px;
     margin: auto;
-    padding-bottom: 144px;
+    padding: 32px;
 }
 
 .accent {
@@ -29,12 +29,15 @@ body {
 }
 
 .title {
-    text-align: center;
     margin: 144px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .title .secondary {
-    margin-bottom: 48px;
+    margin: 0 0 48px;
 }
 
 .secondary {
@@ -45,6 +48,14 @@ body {
     opacity: 30%;
 }
 
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+
+    .content .column {
+        width: calc(50% - 24px);
+    }
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -52,7 +63,6 @@ body {
 }
 
 .content .column {
-    width: calc(50% - 24px);
     margin-bottom: 32px;
 }
 
