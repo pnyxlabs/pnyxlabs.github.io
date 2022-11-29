@@ -40,6 +40,10 @@ body {
     margin: 0 0 48px;
 }
 
+.title img {
+    max-width:100%;
+}
+
 .secondary {
     text-transform: uppercase;
     font-size: 18px;
